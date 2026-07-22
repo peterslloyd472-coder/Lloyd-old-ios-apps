@@ -1,5 +1,5 @@
 {
-    "host": "iphoneosobscura.litten.ca",
+    "host": "://onrender.com",
     "donate_url": "",
     "header_tags": "",
     "featured": [
@@ -14,7 +14,7 @@
         "com.apple.imovie"
     ],
     "database_location": "db.json",
-    "port": 12345,
+    "port": 8080,
     "repeater_url_prefix": "https://proxyserver.litten.ca/",
     "archive_org_archives": [
         "minecraft-iOS",
