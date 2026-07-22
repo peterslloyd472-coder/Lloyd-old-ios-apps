@@ -157,7 +157,7 @@ public class Server {
             }
             boolean debugMode = exchangeURI.toLowerCase().contains("debug");
             StringBuilder out = new StringBuilder();
-            out.append(Templates.generateBasicHeader("Legacy iOS App Finder", headerTag))
+            out.append(Templates.generateBasicHeader("Lloyd old ios apps", headerTag))
                     .append("<body class=\"pinstripe\"><panel><fieldset><div><div><center><strong>Legacy iOS App Finder Homepage</strong></center></div></div>");
             if (debugMode) out.append("<div><div>Debug Mode</div></div>");
             out.append("<div><div><form action=\"");
