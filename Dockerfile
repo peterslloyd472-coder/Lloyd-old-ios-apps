@@ -4,8 +4,8 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Stage 2: Create a lightweight runtime image to host on Render
-FROM openjdk:17-slim
+# Stage 2: Use a modern, active open-source Java 17 image
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/ObscuraServer/target/ObscuraServer-1.0-SNAPSHOT-jar-with-dependencies.jar app.jar
 COPY --from=build /app/config.json config.json
